@@ -1,0 +1,36 @@
+.service-container {
+    background: linear-gradient(
+      334deg,
+      rgba(35, 88, 122, 1) 0%,
+      rgba(9, 22, 39, 1) 29%,
+      rgba(9, 22, 39, 1) 71%,
+      rgba(35, 88, 122, 1) 100%
+    );
+  }
+  
+  .sectionCard {
+    background: rgb(0, 0, 0);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(64, 63, 63, 1) 0%,
+      rgba(33, 32, 32, 1) 58%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(64, 63, 63, 1) 0%,
+      rgba(33, 32, 32, 1) 58%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(64, 63, 63, 1) 0%,
+      rgba(33, 32, 32, 1) 58%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  }
+  
