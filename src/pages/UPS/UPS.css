@@ -1,4 +1,4 @@
-/* .ups-container {
+.ups-container {
   clip-path: polygon(
     38% 4%,
     100% 12%,
@@ -10,7 +10,7 @@
     0 20%
   );
   font-family: "Exo 2", sans-serif;
-} */
+}
 
 .shadoww {
   box-shadow: 1px 2px 19px 6px rgb(0 0 0 / 40%);

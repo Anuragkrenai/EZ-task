@@ -130,7 +130,7 @@ const Login = ({ setShowLogin }) => {
     { name: "Venezuela", code: "+58", flag: "🇻🇪" },
     { name: "Vietnam", code: "+84", flag: "🇻🇳" },
     { name: "Yemen", code: "+967", flag: "🇾🇪" },
-    { name: "Zimbabwe", code: "+263", flag: "🇿🇼" }
+    { name: "Zimbabwe", code: "+263", flag: "🇿🇼" },
   ];
 
   const handleSubmit = (e) => {
@@ -212,16 +212,28 @@ const Login = ({ setShowLogin }) => {
               className="w-full p-3 text-md text-black rounded-lg border border-[#a3a3a3] focus:outline-none focus:border-black placeholder:text-gray-500 placeholder:font-medium"
             />
 
-            {/* Country code dropdown and mobile input */}
             <div className="flex items-stretch rounded-lg overflow-hidden border border-[#a3a3a3] relative">
               <div className="text-black text-[13px] flex items-center justify-center  bg-gray-100 border-r border-[#a3a3a3]">
-                <select name="" id="" className="outline-none" value={formData.country_code} onChange={(e) => setFormData({...formData, country_code: e.target.value})}>
-                  {
-                    countryCode.map(country=>{
-                      return <option value={country.code} key={country.name} selected={country.code === "+91"}>{country.flag}{" "}{country.code}</option>
-                    })
+                <select
+                  name=""
+                  id=""
+                  className="outline-none"
+                  value={formData.country_code}
+                  onChange={(e) =>
+                    setFormData({ ...formData, country_code: e.target.value })
                   }
-                  
+                >
+                  {countryCode.map((country) => {
+                    return (
+                      <option
+                        value={country.code}
+                        key={country.name}
+                        selected={country.code === "+91"}
+                      >
+                        {country.flag} {country.code}
+                      </option>
+                    );
+                  })}
                 </select>
               </div>
 
