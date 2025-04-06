@@ -37,7 +37,7 @@ const Services = () => {
         GET IN TOUCH
       </button>
 
-      {showLogin && <Login />}
+      {showLogin && <Login setShowLogin={setShowLogin} />}
     </div>
   );
 };
