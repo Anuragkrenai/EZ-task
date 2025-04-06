@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Login.css";
 import { RxCross2 } from "react-icons/rx";
+import axios from "axios";
 
 const Login = ({ setShowLogin }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
+    country_code: "+91",
     email: "",
     service: "",
     message: "",
@@ -149,26 +152,33 @@ const Login = ({ setShowLogin }) => {
       const submissionData = {
         name: formData.name,
         country_code: formData.country_code,
-        mobile: formData.mobile,
+        phone_no: formData.mobile,
         email: formData.email,
-        service: formData.service,
+        service: [formData.service],
         message: formData.message,
-        promotion: formData.promotion || false,
+        promotion: formData.promotion,
       };
+      sendData(submissionData);
+    }
+  };
 
-      console.log("Form submission data:", submissionData);
-
-      setFormData({
-        name: "",
-        mobile: "",
-        email: "",
-        service: "",
-        message: "",
-        promotion: true,
-      });
-
-      alert("Form submitted successfully");
-      setShowLogin(false);
+  const sendData = async (submissionData) => {
+    setIsLoading(true);
+    try {
+      const response = await axios.post(
+        "https://test.ezworks.ai/form-api",
+        submissionData
+      );
+      console.log(response);
+      if (response.status === 200) {
+        setIsLoading(false);
+        alert("Form submitted successfully");
+        setShowLogin(false);
+      }
+    } catch (error) {
+      setIsLoading(false);
+      console.log(error);
+      alert("Error Submitting Form");
     }
   };
 
@@ -324,7 +334,7 @@ const Login = ({ setShowLogin }) => {
               type="submit"
               className="bg-[#ea7b2c] text-white p-3 text-md rounded-lg cursor-pointer"
             >
-              Submit
+              {isLoading ? <span class="loader"></span> : "Submit"}
             </button>
           </form>
         </div>
