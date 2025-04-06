@@ -11,6 +11,399 @@ const Services = () => {
   const services = [
     {
       title: "Presentation Design",
+      index: 0,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 1,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 2,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 3,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 4,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 5,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 6,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 7,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 8,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 9,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 10,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 11,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 12,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 13,
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+
+    {
+      title: "Presentation Design",
+      index: 14,
       icon: [
         {
           name: "Flipping & Formatting",
@@ -64,26 +457,53 @@ const Services = () => {
             disableOnInteraction: false,
           }}
           loop={true}
-          modules={[Pagination, EffectCards]}
+          modules={[Pagination, EffectCards, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
             <SwiperCard services={services[0]} />
           </SwiperSlide>
           <SwiperSlide>
-            <SwiperCard services={services[0]} />
+            <SwiperCard services={services[1]} />
           </SwiperSlide>
           <SwiperSlide>
-            <SwiperCard services={services[0]} />
+            <SwiperCard services={services[2]} />
           </SwiperSlide>
           <SwiperSlide>
-            <SwiperCard services={services[0]} />
+            <SwiperCard services={services[3]} />
           </SwiperSlide>
           <SwiperSlide>
-            <SwiperCard services={services[0]} />
+            <SwiperCard services={services[4]} />
           </SwiperSlide>
           <SwiperSlide>
-            <SwiperCard services={services[0]} />
+            <SwiperCard services={services[5]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[6]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[7]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[8]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[9]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[10]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[11]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[12]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[13]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[14]} />
           </SwiperSlide>
         </Swiper>
       </div>
