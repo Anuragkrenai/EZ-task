@@ -1,9 +1,41 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import "./Services.css";
 import SwiperCard from "../../components/SwiperCard/SwiperCard";
 import Login from "../Login/Login";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, EffectCards } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 const Services = () => {
-    const [showLogin, setShowLogin] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
+  const services = [
+    {
+      title: "Presentation Design",
+      icon: [
+        {
+          name: "Flipping & Formatting",
+          image: "Flipping&Formatting.svg",
+        },
+        {
+          name: "Slide Design",
+          image: "SlideDesign.svg",
+        },
+        {
+          name: "Report Design",
+          image: "ReportDesign.svg",
+        },
+        {
+          name: "Animated Presentation",
+          image: "AnimatedPresentation.svg",
+        },
+        {
+          name: "Interactive Presentation",
+          image: "InteractivePresentation.svg",
+        },
+      ],
+      image: "Presentation%20Design.svg",
+    },
+  ];
   return (
     <div className="service-container flex flex-col items-center w-full  py-[35px]">
       <h1 className="text-white  text-center w-[90%] text-[1.4rem] leading-[27px] font-[600] xl:font-[500] xl:w-full xl:text-[1.9rem]">
@@ -20,8 +52,40 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="sectionCard-container my-4 mt-6 w-full flex justify-center items-center xl:my-5 xl:mt-6">
-        <SwiperCard />
+      <div className="sectionCard-container my-4 mt-6 w-full flex justify-center items-center  xl:my-5 xl:mt-6  mr-[38vw] sm:mr-[15vw] md:mr-[9vw] lg:mr-[16vw] xl:mr-[6vw]">
+        <Swiper
+          effect={"cards"}
+          slidesPerView={3}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Pagination, EffectCards]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <SwiperCard services={services[0]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[0]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[0]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[0]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[0]} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCard services={services[0]} />
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className="flex justify-center items-center w-[90%] flex-col mt-6 gap-[13px] text-white xl:w-[35%]">
@@ -33,7 +97,10 @@ const Services = () => {
         </p>
       </div>
 
-      <button onClick={() => setShowLogin(true)} className="bg-[#ea7b2c] cursor-pointer mt-3 mb-3  text-white px-4 py-3 text-[0.9rem] rounded-md active:scale-98 transition-all duration-300 hover:bg-amber-600 xl:mb-10">
+      <button
+        onClick={() => setShowLogin(true)}
+        className="bg-[#ea7b2c] cursor-pointer mt-3 mb-3  text-white px-4 py-3 text-[0.9rem] rounded-md active:scale-98 transition-all duration-300 hover:bg-amber-600 xl:mb-10"
+      >
         GET IN TOUCH
       </button>
 
